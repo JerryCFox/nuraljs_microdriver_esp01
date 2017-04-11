@@ -51,7 +51,7 @@ function init(options,cb){
                                                         }
                                                         else{
                                                             IPdetails=ipOb;
-                                                            cb(err,"ESP01 Enabled");
+                                                            cb(err,"ESP01 Wifi Enabled");
                                                         }
                                                     });   
                                                 }
