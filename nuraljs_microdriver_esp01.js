@@ -5,7 +5,6 @@ var method;
 var mode;
 var APconfig;
 var config;
-var togglepin;
 var wifi=0;
 var IPdetails;
 
@@ -15,11 +14,6 @@ function init(options,cb){
             wifi=options.wifi;
             if(options.method){
                 method=options.method;
-                if(options.togglepin){
-                    togglepin=options.togglepin;
-                    //togglepin now
-                    digitalWrite(togglepin,1);
-                }
                 if(options.mode){
                     mode=options.mode;
                 }
