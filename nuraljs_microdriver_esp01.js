@@ -1,12 +1,16 @@
 module.exports.init=init;
-module.exports.details=var details;
-module.exports.wifi=var wifi;
+
 
 var err=null;
 var method;
 var mode;
 var APconfig;
 var config;
+var details;
+var wifi;
+
+module.exports.details=details;
+module.exports.wifi=wifi;
 
 function init(options,cb){
     if(options){
