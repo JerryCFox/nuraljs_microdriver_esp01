@@ -1,5 +1,5 @@
 module.exports.init=init;
-module.exports.details=IPdetails;
+module.exports.details=details;
 module.exports.wifi=wifi;
 
 var err=null;
@@ -50,7 +50,7 @@ function init(options,cb){
                                                             cb(err,"ESP01 Failure getting IP Details");
                                                         }
                                                         else{
-                                                            IPdetails=ipOb;
+                                                            details=ipOb;
                                                             cb(err,"ESP01 Wifi Enabled");
                                                         }
                                                     });   
