@@ -14,8 +14,6 @@ function getdetails(){
 
 function init(options,cb){
     if(options){
-        if(options.wifi){
-            wifi=options.wifi;
             if(options.method){
                 method=options.method;
                 if(options.mode){
@@ -80,10 +78,6 @@ function init(options,cb){
             else{
                 cb(err,"ESP01 connection method not supplied");
             }
-        }
-        else{
-            cb(err,"ESP01 require not supplied");
-        }
     }
     else{
         cb(err,"ESP01 Chip Disabled");
