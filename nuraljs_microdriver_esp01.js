@@ -1,6 +1,6 @@
 module.exports.init=init;
-module.exports.details=IPdetails=0;
-module.exports.wifi=wifi=0;
+module.exports.details=IPdetails;
+module.exports.wifi=wifi;
 
 var err=null;
 var method;
