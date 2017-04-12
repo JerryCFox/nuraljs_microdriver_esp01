@@ -53,6 +53,12 @@ function init(options,cb){
                                                         }
                                                         else{
                                                             details=ipOb;
+                                                            http.createServer(function(req,res){          //Create Server
+                                                                console.log("here");
+                                                                webcore.routes(req,res,function(err,res){
+                                                                  res.end();
+                                                                });
+                                                              });
                                                             cb(err,"ESP01 Wifi Enabled");
                                                         }
                                                     });   
