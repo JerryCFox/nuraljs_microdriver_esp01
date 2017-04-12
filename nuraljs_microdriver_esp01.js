@@ -1,4 +1,5 @@
 module.exports.init=init;
+module.exports.details=IPdetails;
 
 var err=null;
 var method;
