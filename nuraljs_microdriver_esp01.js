@@ -7,6 +7,8 @@ var method;
 var mode;
 var APconfig;
 var config;
+var wifi;
+var details;
 
 function init(options,cb){
     if(options){
