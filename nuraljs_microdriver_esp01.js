@@ -1,5 +1,6 @@
 module.exports.init=init;
-
+module.exports.details=updatedetails;
+module.exports.wifi=updatewifi;
 
 var err=null;
 var method;
@@ -9,8 +10,13 @@ var config;
 var details;
 var wifi;
 
-module.exports.details=details;
-module.exports.wifi=wifi;
+function updatedetails(){
+    return details;
+}
+
+function updatewifi(){
+    return wifi;
+}
 
 function init(options,cb){
     if(options){
