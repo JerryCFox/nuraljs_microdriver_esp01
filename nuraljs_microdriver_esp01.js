@@ -1,5 +1,5 @@
 module.exports.init=init;
-module.exports.details=IPdetails;
+module.exports.details=details;
 
 var err=null;
 var method;
@@ -8,6 +8,10 @@ var APconfig;
 var config;
 var wifi=0;
 var IPdetails;
+
+function details(){
+    return IPdetails;
+}
 
 function init(options,cb){
     if(options){
@@ -52,7 +56,7 @@ function init(options,cb){
                                                         }
                                                         else{
                                                             IPdetails=ipOb;
-                                                            cb(err,"ESP01 Wifi Enabled");
+                                                            cb(err,"ESP01 Wifi Enabled", wifi);
                                                         }
                                                     });   
                                                 }
