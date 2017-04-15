@@ -52,7 +52,7 @@ function init(options,cb){
                                                 else{
                                                     wifi.getIP(function(err,ipOb){
                                                         if(err){
-                                                            cb(err,"ESP01 Failure getting IP Details");
+                                                            throw err;
                                                         }
                                                         else{
                                                             details=ipOb;
